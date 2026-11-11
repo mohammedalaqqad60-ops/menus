@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@500;600;700&family=Tajawal:wght@400;500;700&display=swap">
+<title>مطعم زهور الشفا | Zuhour Al-Shifa</title>
+<style>
+:root{box-sizing:border-box;--bg:#f2f3f5;--tx:#26262a;--mu:#7b7b82;--tan:#86704d;--dk:#434448;--cd:#fff;--ln:#dcdde1}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#1c1c1f;--tx:#eeeae2;--mu:#a09d98;--tan:#c3a874;--dk:#2c2c30;--cd:#26262a;--ln:#38383d}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#1c1c1f;--tx:#eeeae2;--mu:#a09d98;--tan:#c3a874;--dk:#2c2c30;--cd:#26262a;--ln:#38383d}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:Tajawal,system-ui,-apple-system,Tahoma,sans-serif;min-height:100%}
+button{font-family:inherit;cursor:pointer}
+.home{min-height:100vh;padding:calc(env(safe-area-inset-top,0px) + 60px) 28px 120px;background:radial-gradient(circle at 15% 12%,rgba(134,112,77,.08) 0 110px,transparent 111px),radial-gradient(circle at 90% 38%,rgba(134,112,77,.07) 0 140px,transparent 141px),radial-gradient(circle at 10% 80%,rgba(134,112,77,.06) 0 120px,transparent 121px)}
+.lg{text-align:center;padding:30px 0 70px}
+.lg .ar{font-family:Amiri,serif;font-size:50px;font-weight:700;color:var(--tan);line-height:1.4}
+.lg .enn{font-family:"Cormorant Garamond",Georgia,serif;font-size:21px;font-weight:700;color:var(--tan);margin-top:2px}
+.tl{display:grid;grid-template-columns:1fr 1fr;gap:56px 16px}
+.tile{display:flex;flex-direction:column;align-items:center;text-align:center;color:var(--tx);text-decoration:none;gap:14px}
+.ic{width:72px;height:72px;border-radius:18px;background:var(--dk);display:flex;align-items:center;justify-content:center}
+.ic svg{width:40px;height:40px;fill:none;stroke:#fff;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tile b{font-size:18px;font-weight:700}
+.tile small{font-size:16px;font-weight:700;margin-top:-10px}
+.nv{position:sticky;top:0;z-index:5;display:flex;justify-content:space-around;gap:4px;background:var(--dk);padding:calc(env(safe-area-inset-top,0px) + 14px) 10px 14px}
+.nv button{border:0;background:none;color:#f1e8d4;font-size:15px;font-weight:700;padding:11px 12px;border-radius:16px}
+.nv button.on{background:#86704d;color:#fff}
+main{max-width:720px;margin:0 auto;padding:0 18px 140px}
+.st{text-align:center;font-family:Amiri,serif;font-size:34px;font-weight:700;color:var(--tan);margin:64px 0 40px}
+[lang=en] .st{font-family:"Cormorant Garamond",Georgia,serif;font-size:32px;letter-spacing:6px;text-transform:uppercase;font-weight:600}
+.gr{display:grid;grid-template-columns:1fr 1fr;gap:34px 18px}
+.hd{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px}
+.nm{font-size:15.5px;font-weight:500;line-height:1.5}
+[lang=en] .nm{text-transform:uppercase;font-size:15px;letter-spacing:.2px}
+.pr{font-size:13px;color:var(--mu)}
+.ad{margin-inline-start:auto;width:24px;height:24px;border-radius:50%;border:1px solid var(--tan);background:none;color:var(--tan);font-size:16px;line-height:1;padding:0;align-self:center}
+.ad:active{background:var(--tan);color:#fff}
+.ds{font-size:13px;color:var(--mu);line-height:1.6;margin-top:3px}
+.nt{text-align:center;color:var(--mu);font-size:12.5px;margin:60px 0 0;line-height:1.8}
+#gb{position:fixed;right:18px;bottom:calc(22px + env(safe-area-inset-bottom,0px));width:60px;height:60px;border-radius:50%;border:0;background:#6d717a;box-shadow:0 8px 22px rgba(0,0,0,.22);display:flex;align-items:center;justify-content:center;z-index:7}
+#gb svg{width:32px;height:32px;fill:none;stroke:#fff;stroke-width:1.7;stroke-linecap:round}
+#cb{position:fixed;left:16px;right:92px;bottom:calc(22px + env(safe-area-inset-bottom,0px));height:60px;background:var(--tan);color:#fff;border:0;border-radius:30px;padding:0 22px;font-size:15.5px;font-weight:700;display:none;justify-content:space-between;align-items:center;z-index:6}
+#sh{position:fixed;inset:0;background:rgba(10,10,10,.55);z-index:9;display:none;align-items:flex-end}
+#sc{background:var(--bg);width:100%;max-height:82%;overflow:auto;border-radius:22px 22px 0 0;padding:24px 22px calc(24px + env(safe-area-inset-bottom,0px));max-width:720px;margin:0 auto}
+#sc h3{margin:0 0 6px;font-size:22px;color:var(--tan)}
+.row{display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--ln)}
+.row span{flex:1;font-size:14.5px;font-weight:500}
+.row button{width:28px;height:28px;border-radius:50%;border:1px solid var(--ln);background:none;color:var(--tx);padding:0}
+.row .rm{width:auto;padding:0 10px;border-color:transparent;color:#b3261e;font-size:12.5px}
+.tot{display:flex;justify-content:space-between;font-size:19px;font-weight:700;padding:16px 0;color:var(--tan)}
+.sb{width:100%;border:1px solid var(--ln);background:none;color:var(--tx);padding:13px;border-radius:30px;font-size:14px;margin-top:8px}
+.sb.cx{border-color:transparent;color:#b3261e;font-weight:700}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<button id="gb" aria-label="Language"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></button>
+<button id="cb"></button>
+<div id="sh"><div id="sc"></div></div>
+<script>
+var D=[
+["المشاوي","🔥",[
+["250 غم مشاوي مشكل",6.25,"2 سيخ كباب / 1 سيخ شقف + بندورة + بصل + خبز",""],
+["250 غم كباب",6,"3 أسياخ كباب + بندورة + بصل + خبز",""],
+["250 غم شيش طاووق",5.5,"2 سيخ شيش + بندورة + بصل + خبز",""],
+["500 غم مشاوي مشكل",12.5,"2 كباب / 2 شقف / 1 شيش + بندورة + بصل + خبز","b"],
+["500 غم كباب",12,"6 أسياخ كباب + بندورة + بصل + خبز","b"],
+["500 غم شيش طاووق",11,"4 أسياخ شيش طاووق + بندورة + بصل + خبز",""],
+["500 غم كبدة / كلاوي / قلب / بيض غنم",12,"6 أسياخ من الصنف المطلوب + بندورة + بصل + خبز","s"],
+["1000 غم مشاوي مشكل",25,"6 كباب / 3 شقف / 2 شيش طاووق + بصل وبندورة مشوية + خبز",""],
+["1000 غم كباب",24,"12 سيخ كباب + بصل مشوي + بندورة مشوية + خبز",""],
+["1000 غم شيش طاووق",22,"8 أسياخ شيش طاووق + بصل وبندورة مشوية + خبز",""],
+["1000 غم كبدة / كلاوي / قلب / بيض غنم",24,"12 سيخ مشوي + بصل وبندورة مشوية + خبز",""],
+["1 دجاجة تركي",7,"10 قطع دجاج مشوي على الفحم + بصل مشوي + بندورة + ثومة + خبز","b"],
+["نصف دجاجة تركي",3.5,"5 قطع دجاج مشوي على الفحم + بصل مشوي + بندورة + ثومة + خبز",""],
+["1 دجاجة مسحب",8,"4 قطع دجاج مشوي على الفحم بدون عظم + بصل + بندورة + ثومة + خبز","n"],
+["نصف دجاجة مسحب",4,"قطعتين دجاج مشوي على الفحم بدون عظم + بصل + بندورة + ثومة + خبز",""]]],
+["التواصي","🍚",[
+["1000 غم منسف (لحم)",25,"3 قطع لحم (350 غم للقطعة) + 1 كيلو جميد + 500 غم رز + خبز شراك + لوز","b"],
+["1000 غم أوزي / فريكة / مندي (لحم)",22,"3 قطع لحم (350 غم للقطعة) + رز + لبن",""],
+["1000 غم خاروف محشي رز أو فريكة (لحم)",20,"الأوزان تبدأ من 10 كيلو + 1 كغ لبن عادي أو لبن بخيار + صحن خضراوات",""],
+["1000 غم قوزي عراقي (لحم)",24,"3 قطع لحم (350 غم) + رز (أبيض / برياني) + مرق (فاصولياء / بامية / تبسي)",""],
+["1000 غم ورق عنب",18,"50-60 حبة · أقل كمية للطلب 2 كغم",""],
+["1 رقاب محشية رز أو فريكة",15,"رقبة محشية بوزن 700-750 غم + لبن",""],
+["1 ضلعة محشية رز أو فريكة",16,"ضلعة محشية بوزن 900-1100 غم + لبن",""],
+["1 دجاجة محشية رز أو فريكة",12,"أقل كمية للطلب دجاجتين + لبن",""],
+["وجبة منسف لحم",9,"قطعة لحم 350 غم + جميد + رز + خبز شراك + لوز",""],
+["وجبة أوزي لحم",9,"قطعة لحم 350 غم + رز + لبن",""],
+["وجبة قوزي لحم",10,"قطعة لحم 350 غم + رز + مرق (فاصولياء / بامية / تبسي)",""],
+["وجبة دولمة",10,"6 حبات ورق عنب + 2 كوسا + باذنجان + 2 بصل + فلفل حلو + بندورة + قطعة لحم",""]]],
+["الصواني والقلايات","🍳",[
+["250 غم كفتة بالبندورة",7,"",""],
+["250 غم كفتة بالطحينية",7,"","b"],
+["250 غم قلاية لحمة بالبندورة",7,"",""],
+["250 غم قلاية لحمة بالبصل",7,"",""],
+["250 غم قلاية كبدة / كلاوي / قلب / بيض غنم",7,"",""],
+["1 حبة عرايس",1.25,"","n"]]],
+["المقبلات","🥗",[
+["صحن مقبلات مشكل 5 أصناف",6,"اختر 5 أصناف من القائمة",""],
+["حمص",2,"","b"],["متبل باذنجان",2,"",""],["متبل شمندر",2,"",""],["بابا غنوج",2,"","b"],
+["طرشي",2,"",""],["ثومية",2,"",""],["سلطة عربية",2,"",""],["سلطة تركية",2,"",""],
+["سلطة باذنجان",2,"",""],["سلطة جرجير",2,"",""],["سلطة زيتون",2,"",""],
+["فتوش",2,"",""],["تبولة",2,"",""],["ورق عنب",2,"",""],
+["بطاطا مقلية",1.5,"",""],["كبة مقلية 2 حبة",2,"","b"],["كبة مشوية حبة",1,"",""],["برك (جبنة أو لحمة)",1,"",""]]],
+["المشروبات","🥤",[
+["مشروبات غازية 250 مل",.5,"",""],["شنينة 1 لتر",3,"","b"],["شنينة 330 مل",1,"",""],
+["عصير طبيعي برتقال / ليمون 1 لتر",5,"",""],["عصير طبيعي برتقال / ليمون 330 مل",2,"",""],["مياه صغير",.5,"",""]]]
+];
+var EN=[
+["Grills",[["250 g Mixed Grill","2 kebab skewers / 1 shqaf skewer · tomato · onion · bread"],["250 g Kebab","3 kebab skewers · tomato · onion · bread"],["250 g Shish Tawook","2 shish skewers · tomato · onion · bread"],["500 g Mixed Grill","2 kebab / 2 shqaf / 1 shish skewers · tomato · onion · bread"],["500 g Kebab","6 kebab skewers · tomato · onion · bread"],["500 g Shish Tawook","4 shish tawook skewers · tomato · onion · bread"],["500 g Liver / Kidney / Heart / Lamb Fries","6 skewers of your choice · tomato · onion · bread"],["1000 g Mixed Grill","6 kebab / 3 shqaf / 2 shish tawook skewers · grilled onion · grilled tomato · bread"],["1000 g Kebab","12 kebab skewers · grilled onion · grilled tomato · bread"],["1000 g Shish Tawook","8 shish tawook skewers · grilled onion · grilled tomato · bread"],["1000 g Liver / Kidney / Heart / Lamb Fries","12 grilled skewers · grilled onion · grilled tomato · bread"],["Whole Turkish-Style Chicken","10 charcoal-grilled pieces · grilled onion · grilled tomato · garlic sauce · bread"],["Half Turkish-Style Chicken","5 charcoal-grilled pieces · grilled onion · grilled tomato · garlic sauce · bread"],["Whole Boneless Chicken (Musahab)","4 charcoal-grilled boneless pieces · grilled onion · grilled tomato · garlic sauce · bread"],["Half Boneless Chicken (Musahab)","2 charcoal-grilled boneless pieces · grilled onion · grilled tomato · garlic sauce · bread"]]],
+["Family Platters",[["1000 g Mansaf (Lamb)","3 lamb pieces (350 g each) · 1 kg jameed · 500 g rice · shrak bread · almonds"],["1000 g Ouzi / Freekeh / Mandi (Lamb)","3 lamb pieces (350 g each) · rice · yogurt"],["1000 g Stuffed Lamb, Rice or Freekeh","Weights start from 10 kg · 1 kg yogurt or cucumber yogurt · vegetable platter"],["1000 g Iraqi Qouzi (Lamb)","3 lamb pieces (350 g each) · rice (white / biryani) · stew (green beans / okra / tabsi)"],["1000 g Stuffed Grape Leaves","50–60 pieces · minimum order 2 kg"],["Stuffed Lamb Neck, Rice or Freekeh","One stuffed neck, 700–750 g · yogurt"],["Stuffed Lamb Rib, Rice or Freekeh","One stuffed rib, 900–1100 g · yogurt"],["Stuffed Chicken, Rice or Freekeh","Minimum order 2 chickens · yogurt"],["Mansaf Lamb Meal","One 350 g lamb piece · jameed · rice · shrak bread · almonds"],["Ouzi Lamb Meal","One 350 g lamb piece · rice · yogurt"],["Qouzi Lamb Meal","One 350 g lamb piece · rice · stew (green beans / okra / tabsi)"],["Dolma Meal","6 grape leaves · 2 zucchini · eggplant · 2 onions · 1 sweet pepper · tomato · lamb piece"]]],
+["Trays & Qalayat",[["250 g Kofta with Tomato",""],["250 g Kofta with Tahini",""],["250 g Lamb Qalayeh with Tomato",""],["250 g Lamb Qalayeh with Onion",""],["250 g Liver / Kidney / Heart / Lamb Fries Qalayeh",""],["1 Arayes",""]]],
+["Mezze & Starters",[["Mixed Mezze Platter (5 kinds)",""],["Hummus",""],["Eggplant Mutabbal",""],["Beetroot Mutabbal",""],["Baba Ghanoush",""],["Pickles",""],["Garlic Dip (Toum)",""],["Arabic Salad",""],["Turkish Salad",""],["Eggplant Salad",""],["Arugula Salad",""],["Olive Salad",""],["Fattoush",""],["Tabbouleh",""],["Stuffed Grape Leaves",""],["French Fries",""],["Fried Kibbeh (2 pcs)",""],["Grilled Kibbeh (1 pc)",""],["Burak (cheese or meat)",""]]],
+["Drinks",[["Soft Drinks 250 ml",""],["Shanina (Yogurt Drink) 1 L",""],["Shanina (Yogurt Drink) 330 ml",""],["Fresh Orange / Lemon Juice 1 L",""],["Fresh Orange / Lemon Juice 330 ml",""],["Small Water",""]]]
+];
+var RV="https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B7%D8%B9%D9%85+%D8%B2%D9%87%D9%88%D8%B1+%D8%A7%D9%84%D8%B4%D9%81%D8%A7",IG="https://www.instagram.com/zohooralshafa/",L="ar",V="home",cart={};
+var S={ar:{home:"الرئيسية",main:"المنيو",sets:"التواصي",drinks:"المشروبات",menu:"المنيو",ig:"انستجرام",igs:"@zohooralshafa",gr:"قيّمنا على Google",ord:"طلبي",tot:"الإجمالي",cl:"إغلاق",cx:"إلغاء الطلب",yes:"نعم، ألغِ الطلب",back:"رجوع",rm:"حذف",cf:"متأكد بدك تلغي الطلب كامل؟",nt:"الأسعار بالدينار الأردني شاملة ضريبة المبيعات · اضغط + لإضافة صنف لطلبك",jd:"دينار"},en:{home:"Home",main:"Main Menu",sets:"Set Menus",drinks:"Drinks",menu:"Menu",ig:"Instagram",igs:"@zohooralshafa",gr:"Rate us on Google",ord:"My Order",tot:"Total",cl:"Close",cx:"Cancel order",yes:"Yes, cancel order",back:"Back",rm:"Remove",cf:"Cancel the whole order?",nt:"All prices in JD, sales tax included · Tap + to add an item to your order",jd:"JD"}};
+var VW={main:[0,2,3],sets:[1],drinks:[4]};
+var IC={menu:'<svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h14M5 17h14"/></svg>',ig:'<svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.8" cy="7.2" r=".6" fill="#fff"/></svg>',gr:'<svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.5 6 .7-4.4 4.1 1.2 6L12 16.9 6.6 19.8l1.2-6L3.4 9.7l6-.7z"/></svg>'};
+var $=function(i){return document.getElementById(i)};
+function T(k){return S[L][k]}
+function fm(p){return p.toFixed(2)}
+function nm(c,i){return L=="en"?EN[c][1][i][0]:D[c][2][i][0]}
+function ds(c,i){return L=="en"?EN[c][1][i][1]:D[c][2][i][2]}
+function cn(c){return L=="en"?EN[c][0]:D[c][0]}
+function tile(href,on,ic,l,s){return '<a class="tile" '+(href?'href="'+href+'" target="_blank" rel="noopener"':'href="#" onclick="'+on+';return false"')+'><span class="ic">'+IC[ic]+'</span><b>'+l+'</b>'+(s?'<small>'+s+'</small>':"")+'</a>'}
+function go(v){V=v;draw();window.scrollTo(0,0)}
+function draw(){
+  var h="";
+  document.documentElement.lang=L;document.documentElement.dir=L=="en"?"ltr":"rtl";
+  if(V=="home"){
+    h='<div class="home"><div class="lg"><div class="ar">مطعم زهور الشفا</div><div class="enn">Zuhour Al-Shifa Restaurant</div></div><div class="tl">'+tile("","go(\'main\')","menu",T("menu"),"")+tile(IG,"","ig",T("ig"),T("igs"))+tile(RV,"","gr",T("gr"),"")+'</div></div>';
+  }else{
+    h='<nav class="nv">'+["home","main","sets","drinks"].map(function(k){return '<button class="'+(k==V?"on":"")+'" onclick="go(\''+k+'\')">'+T(k)+'</button>'}).join("")+'</nav><main>';
+    VW[V].forEach(function(c){
+      h+='<section><h2 class="st">'+cn(c)+'</h2><div class="gr">';
+      D[c][2].forEach(function(x,i){h+='<div class="it"><div class="hd"><span class="nm">'+nm(c,i)+'</span><span class="pr">'+fm(x[1])+'</span><button class="ad" aria-label="+" onclick="add(\''+c+'-'+i+'\')">+</button></div>'+(x[2]?'<div class="ds">'+ds(c,i)+'</div>':"")+'</div>'});
+      h+='</div></section>';
+    });
+    h+='<p class="nt">'+T("nt")+'</p></main>';
+  }
+  $("app").innerHTML=h;upd();
+}
+function add(k){cart[k]=(cart[k]||0)+1;upd()}
+function tot(){var n=0,s=0;for(var k in cart){var p=k.split("-");n+=cart[k];s+=cart[k]*D[p[0]][2][p[1]][1]}return[n,s]}
+function upd(){var r=tot(),b=$("cb");b.style.display=r[0]?"flex":"none";b.innerHTML='<span>'+T("ord")+' ('+r[0]+')</span><span>'+fm(r[1])+' '+T("jd")+'</span>'}
+function chg(k,d){cart[k]+=d;if(cart[k]<=0)delete cart[k];upd();tot()[0]?ord():hide()}
+function ord(){
+  var h='<h3>'+T("ord")+'</h3>';
+  for(var k in cart){var p=k.split("-");h+='<div class="row"><span>'+nm(p[0],p[1])+'</span><button onclick="chg(\''+k+'\',-1)">−</button><b>'+cart[k]+'</b><button onclick="chg(\''+k+'\',1)">+</button><button class="rm" onclick="chg(\''+k+'\',-'+cart[k]+')">'+T("rm")+'</button></div>'}
+  h+='<div class="tot"><span>'+T("tot")+'</span><span>'+fm(tot()[1])+' '+T("jd")+'</span></div><button class="sb" onclick="hide()">'+T("cl")+'</button><button class="sb cx" onclick="cc()">'+T("cx")+'</button>';
+  $("sc").innerHTML=h;$("sh").style.display="flex";
+}
+function hide(){$("sh").style.display="none"}
+function cc(){$("sc").innerHTML='<h3>'+T("cf")+'</h3><button class="sb cx" onclick="cc2()">'+T("yes")+'</button><button class="sb" onclick="ord()">'+T("back")+'</button>'}
+function cc2(){cart={};upd();hide()}
+$("cb").onclick=ord;
+$("sh").onclick=function(e){if(e.target==this)hide()};
+$("gb").onclick=function(){L=L=="ar"?"en":"ar";hide();draw()};
+draw();
+</script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&family=Cormorant+Garamond:ital,wght@0,600;1,500;1,600&display=swap">
+<title>كوخ الجبل | Mountain Hut Café</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f3eee5;--tx:#1d1a16;--mu:#80766a;--ac:#8a5a2b;--ln:#d9d0c1}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#141210;--tx:#ece4d6;--mu:#9a8f80;--ac:#c9a36b;--ln:#2e2924}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#141210;--tx:#ece4d6;--mu:#9a8f80;--ac:#c9a36b;--ln:#2e2924}
+html{scroll-padding-top:104px;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:Cairo,system-ui,-apple-system,Tahoma,sans-serif;padding-bottom:100px}
+button{font-family:inherit;cursor:pointer}
+header{text-align:center;color:#ece4d6;background:#1b1815;padding:44px 24px 34px;position:relative}
+header:after{content:"";position:absolute;left:24px;right:24px;bottom:12px;height:3px;border-block:1px solid #4a3f33}
+header svg{width:92px;height:46px;stroke:#c9a36b;fill:none;stroke-width:1.4;stroke-linejoin:round;stroke-linecap:round}
+.en{font-family:"Cormorant Garamond",Georgia,serif;letter-spacing:7px;font-size:13px;color:#c9a36b;margin-top:14px;direction:ltr;font-weight:600}
+header h1{margin:4px 0 6px;font-size:46px;font-weight:300;line-height:1.3}
+header p{margin:0;font-size:13px;color:#a99d8c;letter-spacing:1px}
+.act{display:flex;gap:22px;justify-content:center;margin-top:20px;padding-bottom:14px}
+.act a,.act button{background:none;border:0;border-bottom:1px solid #c9a36b;color:#ece4d6;padding:2px 0;font-size:13px;text-decoration:none}
+.promo{border-bottom:1px solid var(--ln);padding:13px 20px;text-align:center;font-size:13.5px}
+.promo b{color:var(--ac);margin-inline-end:8px;letter-spacing:1px}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:10px 16px 0;border-bottom:1px solid var(--ln)}
+.sr{display:flex;gap:10px;align-items:center;border-bottom:1px solid var(--ln);padding-bottom:6px;margin-bottom:2px}
+.sr input{flex:1;border:0;background:none;color:var(--tx);font:inherit;font-size:14px;outline:0;padding:6px 0}
+.sr button{background:none;border:0;color:var(--mu);padding:4px}
+.sr button.on{color:var(--ac)}
+.tabs{display:flex;gap:22px;overflow-x:auto;scrollbar-width:none}
+.tabs button{flex:none;border:0;border-bottom:2px solid transparent;background:none;color:var(--mu);padding:11px 0;font-size:14px;font-weight:600}
+.tabs button.on{color:var(--tx);border-color:var(--ac)}
+main{max-width:620px;margin:0 auto}
+section{padding:38px 22px 0}
+.sh{display:flex;align-items:baseline;gap:12px;padding-bottom:12px;border-bottom:1px solid var(--tx)}
+.ix{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--ac);font-size:17px;font-weight:600}
+.sh h2{margin:0;font-size:28px;font-weight:600}
+.sh i{margin-inline-start:auto;font-family:"Cormorant Garamond",serif;font-size:18px;color:var(--mu);direction:ltr}
+.sn{margin:0;padding:10px 0;font-size:13px;color:var(--ac);border-bottom:1px solid var(--ln)}
+.it{display:flex;align-items:center;gap:14px;padding:15px 0;border-bottom:1px solid var(--ln)}
+.it.so{opacity:.45}
+.in{flex:1;min-width:0}
+.a{font-weight:600;font-size:16px;line-height:1.5}
+.e{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:15.5px;color:var(--mu);direction:ltr;text-align:right}
+.bd{display:flex;align-items:center;gap:6px;margin-top:5px;font-size:11px;color:var(--ac);letter-spacing:.4px}
+.bd:before{content:"";width:5px;height:5px;transform:rotate(45deg);background:currentColor}
+.bd.s{color:var(--mu)}
+.so .a{text-decoration:line-through}
+.r{display:flex;flex-direction:column;align-items:flex-end;gap:7px;flex:none}
+.r b{font-family:"Cormorant Garamond",serif;font-size:22px;font-weight:600;line-height:1}
+.r small{font-family:Cairo;font-size:10px;color:var(--mu);font-weight:400;margin-inline-start:3px}
+.r div{display:flex;gap:6px;align-items:center}
+.hb{background:none;border:0;color:var(--mu);padding:4px;display:flex}
+.hb svg{fill:none;stroke:currentColor;stroke-width:1.5}
+.hb.on{color:var(--ac)}.hb.on svg{fill:currentColor}
+.ad{width:30px;height:30px;border-radius:50%;border:1px solid var(--tx);background:none;color:var(--tx);font-size:18px;line-height:1;padding:0}
+.ad:active{background:var(--tx);color:var(--bg)}
+.ad:disabled{opacity:.3}
+.ft{text-align:center;color:var(--mu);font-size:12.5px;padding:44px 20px 10px;line-height:2}
+.ft a{color:var(--ac);text-decoration:none;border-bottom:1px solid var(--ac)}
+#cb{position:fixed;inset:auto 16px calc(16px + env(safe-area-inset-bottom,0px)) 16px;width:calc(100% - 32px);max-width:588px;margin:0 auto;background:var(--tx);color:var(--bg);border:0;border-radius:3px;padding:16px 20px;font-size:15px;font-weight:600;display:none;justify-content:space-between;z-index:6}
+#sh{position:fixed;inset:0;background:rgba(10,8,6,.55);z-index:9;display:none;align-items:flex-end}
+#sc{background:var(--bg);width:100%;max-height:85%;overflow:auto;border-radius:14px 14px 0 0;padding:24px 22px calc(24px + env(safe-area-inset-bottom,0px));max-width:620px;margin:0 auto}
+#sc h3{margin:0 0 2px;font-size:22px;font-weight:600}
+.ch{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.ch button{border:1px solid var(--ln);background:none;color:var(--tx);border-radius:30px;padding:8px 16px;font-size:13px}
+.ch button.on{background:var(--tx);color:var(--bg);border-color:var(--tx)}
+#sc input{width:100%;padding:10px 0;border:0;border-bottom:1px solid var(--ln);background:none;color:var(--tx);font:inherit;margin:4px 0 12px;outline:0}
+.pb{width:100%;border:0;background:var(--tx);color:var(--bg);padding:15px;border-radius:3px;font-weight:600;font-size:15px;margin-top:6px}
+.sb{width:100%;border:1px solid var(--ln);background:none;color:var(--tx);padding:13px;border-radius:3px;font-size:14px;margin-top:8px}
+.row{display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--ln)}
+.row div{flex:1;font-size:14.5px;font-weight:600}.row small{display:block;color:var(--mu);font-weight:400}
+.row button{width:28px;height:28px;border-radius:50%;border:1px solid var(--ln);background:none;color:var(--tx);padding:0}
+.tot{display:flex;justify-content:space-between;align-items:baseline;font-weight:600;font-size:16px;padding:16px 0}
+.tot span:last-child{font-family:"Cormorant Garamond",serif;font-size:26px;color:var(--ac)}
+.cx{border-color:transparent;color:#b3261e;font-weight:600}
+.row .rm{width:auto;padding:0 10px;border-color:transparent;color:#b3261e;font-size:12.5px;font-weight:600}
+#lg{position:absolute;top:16px;left:18px;z-index:2;background:none;border:1px solid #c9a36b;color:#c9a36b;border-radius:20px;padding:3px 14px;font-size:12px;font-weight:600}
+.ft a.rv{display:inline-block;margin-top:16px;border:1px solid var(--ac);color:var(--ac);padding:10px 28px;border-radius:3px;font-weight:600;font-size:14px}
+body.en .a{font-family:"Cormorant Garamond",Georgia,serif;font-size:19px;font-weight:600}
+body.en .e{font-family:Cairo,sans-serif;font-style:normal;font-size:12.5px;direction:rtl;text-align:left}
+body.en .sh h2{font-family:"Cormorant Garamond",serif;font-size:30px}
+body.en .sh i{font-family:Cairo,sans-serif;font-style:normal;font-size:15px;direction:rtl}
+</style>
+</head>
+<body>
+<header><button id="lg" onclick="tg()">EN</button><svg viewBox="0 0 92 46"><path d="M4 42L32 12 44 26 60 4 88 42M20 42h68M0 42h92"/></svg><div class="en">MOUNTAIN HUT CAFÉ</div><h1>كوخ الجبل</h1><p id="hp">قهوة · حلويات · أراجيل</p><div class="act"><button id="rt" onclick="rnd()">اقتراح اليوم</button><a href="https://www.instagram.com/mountainhutcafe" target="_blank" rel="noopener">@mountainhutcafe</a></div></header>
+<div class="promo" id="pm"><b>عرض</b>اطلب 2 وافل أو كريب واحصل على واحد مجاناً</div>
+<div class="bar"><div class="sr"><input id="q" placeholder="ابحث عن مشروبك أو حلاك"><button id="fv" title="المفضلة"><svg viewBox="0 0 24 24" width="19" height="19"><path d="M12 20.5S3.5 15.4 3.5 9.3A4.6 4.6 0 0112 7a4.6 4.6 0 018.5 2.3c0 6.100-8.500 11.200-8.500 11.200z" stroke-linejoin="round"/></svg></button></div><div class="tabs" id="tabs"></div></div>
+<main id="m"></main>
+<div class="ft"><span id="ft1">الأسعار بالدينار الأردني</span><br><a id="fl" href="https://www.instagram.com/mountainhutcafe" target="_blank" rel="noopener">تابعنا @mountainhutcafe</a><br><a class="rv" id="rv" href="https://www.google.com/maps/search/?api=1&query=%D9%83%D9%88%D8%AE+%D8%A7%D9%84%D8%AC%D8%A8%D9%84+%D9%83%D8%A7%D9%81%D9%8A%D9%87+Mountain+Hut+Cafe" target="_blank" rel="noopener">★ قيّمنا على Google</a></div>
+<button id="cb"><span id="cn"></span><span id="ct"></span></button>
+<div id="sh"><div id="sc"></div></div>
+<script>
+// فلاغات: b=الأكثر طلباً، n=جديد، s=نفذت الكمية
+var C=[
+["ساخن","☕","Hot Drinks",[[2,"قهوة تركي|Turkish Coffee;قهوة فرنسية|French Coffee;قهوة المانية|German Coffee;اسبريسو|Espresso;هوت شوكلت|Hot Chocolate;نسكافيه|Nescafé;كابتشينو|Cappuccino#b;كابتشينو كراميل|Cappuccino Caramel;كابتشينو بندق|Cappuccino Hazelnut;موكاتشينو|Mochaccino;لاتيه|Latte;لاتيه كراميل|Latte Caramel;موكا|Mocha;دارك موكا|Dark Mocha;وايت موكا|White Mocha;امريكان بلاك|Americano;توفي لاتيه|Toffee Latte;رد فلفت|Red Velvet"],[1,"شاي|Tea"]]],
+["بارد","🧊","Iced Coffee",[[3.5,"آيس كوفي|Iced Coffee;آيس موكا|Iced Mocha;آيس لاتيه كراميل|Iced Caramel Latte;آيس كراميل ميكاتو|Iced Caramel Macchiato;آيس سبانش لاتيه|Iced Spanish Latte#b;آيس توفي|Iced Toffee;آيس رد فيلفت|Iced Red Velvet"],[4,"آيس بيستاشيو|Iced Pistachio#n"],[2,"آيس تي خوخ|Iced Tea Peach;آيس تي ليمون|Iced Tea Lemon"]]],
+["ميلك شيك","🥤","Milkshake",[[3.5,"ميلك شيك عربية|Arabic;ميلك شيك شوكلت|Chocolate;ميلك شيك أوريو|Oreo;ميلك شيك سنكرز|Snickers;ميلك شيك كروكان|Crookan;ميلك شيك اللوتس|Lotus#b;ميلك شيك فراولة|Strawberry;ميلك شيك تشيز كيك|Cheesecake;ميلك شيك فانيلا|Vanilla"],[4,"ميلك شيك كوخ الجبل|Mountain Hut Milkshake#b"],[2,"آيس كريم|Ice Cream"]]],
+["كوكتيلات","🍹","Cocktails",[[3,"جوافة وحليب|Guava & Milk;جوافة ونعنع|Guava & Mint;برتقال وفراولة|Orange & Strawberry;فراولة ونعنع|Strawberry & Mint;موز وحليب|Banana & Milk;موز وفراولة وحليب|Banana, Strawberry & Milk;مانجا وفراولة وجوافة|Mango, Strawberry & Guava;كيوي ومانجا فراولة وجوافة|Kiwi, Mango, Strawberry & Guava"],[4,"أفوكادو عسل ومكسرات|Avocado, Honey & Nuts;كوكتيل كوخ الجبل|Mountain Hut Cocktail#b"]]],
+["عصائر طبيعية","🍊","Fresh Juices",[[3,"برتقال|Orange;ليمون|Lemon;اناناس|Pineapple;منجا|Mango;فراولة|Strawberry;جوافة|Guava;تفاح|Apple;كيوي|Kiwi;ليمون ونعنع|Lemon & Mint;كيوي وليمون|Kiwi & Lemon"]]],
+["غازية","🥫","Soft Drinks",[[.5,"مياه|Water"],[1,"بيبسي / دايت|Pepsi / Diet;سفن / دايت|7 Up / Diet;ميراندا|Mirinda"],[2,"صودا|Soda;باربيكان|Barbican"],[2.5,"جراندين|Grenadine;موهيتو|Mojito"],[3,"ردبول|Red Bull;فايروس|Virus;كود رد|Code Red"]]],
+["وافل وكريب","🧇","Waffle & Crepe",[[4,"كيندر بوينو|Kinder Bueno#b;سنكرز|Snickers;أوريو|Oreo;فليك|Flake;مالتيزرز|Maltesers;جالكسي|Galaxy;كيت كات|Kit Kat;ام اند ام|M&M;بابلي|Bubbly;فواكة|Fruit;فوتوشيني (آيس كريم + فواكه)|Fettuccine + Ice Cream"],[3.5,"بان كيك|Pancake"]],"اطلب 2 وافل أو كريب واحصل على واحد مجاناً"],
+["برغر كيك","🍰","Burger-Cake",[[3.5,"فيريرو|Ferrero"],[3,"سنكرز|Snickers;لوتس|Lotus#b;نوتيلا|Nutella;أوريو|Oreo"],[4,"فستق حلبي|Pistachio#s"]]],
+["حلويات","🍮","Desserts",[[1.5,"ذرة|Corn"],[2,"حلى الخشخش|Khashkhash Cup;حلى النوتيلا|Nutella Cup;حلى اللوتس|Lotus Cup;حلى التشيز كيك|Cheesecake Cup;كنافة على الفحم|Charcoal Konafa#b"],[3,"الكيكة التركية|Turkish Cake"],[3.5,"ناتشوز|Nachos#n"]]],
+["أراجيل","💨","Hookahs",[[4,"تفاحتين|Two Apples;ليمون ونعنع|Lemon & Mint;علكة وقرفة|Gum & Cinnamon;علكة ونعنع|Gum & Mint;علكة|Gum;عنب ونعنع|Grape & Mint;عنب وتوت|Grape & Berry;بطيخ ونعنع|Watermelon & Mint;كاندي دروبس|Candy Drops;بلوبيري|Blueberry;كوخ الجبل|Mountain Hut#b"]]]
+];
+C.forEach(function(c){c.it=[];c[3].forEach(function(g){g[1].split(";").forEach(function(s){var a=s.split("#"),n=a[0].split("|");c.it.push({a:n[0],e:n[1]||"",p:g[0],f:a[1]||""})})})});
+var HS='<svg viewBox="0 0 24 24" width="19" height="19"><path d="M12 20.5S3.5 15.4 3.5 9.3A4.6 4.6 0 0112 7a4.6 4.6 0 018.5 2.3c0 6.100-8.500 11.200-8.500 11.200z" stroke-linejoin="round"/></svg>',BD={b:"الأكثر طلباً",n:"جديد",s:"نفذت الكمية"},SG=["بدون سكر","سكر خفيف","سكر وسط","سكر زيادة"];
+var $=function(i){return document.getElementById(i)},cart=[],fav={},onlyFav=false,pend=null,tbl="";
+try{fav=JSON.parse(localStorage.getItem("mhfav")||"{}")}catch(e){}
+var L="ar",TR={"الأكثر طلباً":"Best Seller","جديد":"New","نفذت الكمية":"Sold out","بدون سكر":"No sugar","سكر خفيف":"Light sugar","سكر وسط":"Medium sugar","سكر زيادة":"Extra sugar","ملاحظة (مثلاً: حليب خالي الدسم)":"Note (e.g. skim milk)","أضف للطلب":"Add to order","إلغاء الطلب":"Cancel order","إلغاء":"Cancel","طلبي":"My Order","حذف":"Remove","رقم الطاولة":"Table number","الإجمالي":"Total","نسخ الطلب لإعطائه للويتر":"Copy order for the waiter","إغلاق":"Close","متأكد بدك تلغي الطلب كامل؟":"Cancel the whole order?","اقتراحنا لك":"Our suggestion","أضفه لطلبي":"Add to my order","اقتراح ثاني":"Another one","ما لقينا نتائج":"No results","د.أ":"JD","اقتراح اليوم":"Today’s pick","ابحث عن مشروبك أو حلاك":"Search drinks & desserts","عرض":"Offer","اطلب 2 وافل أو كريب واحصل على واحد مجاناً":"Order 2 waffles or crepes, get one free","قهوة · حلويات · أراجيل":"Coffee · Desserts · Hookahs","الأسعار بالدينار الأردني":"Prices in Jordanian Dinar","تابعنا":"Follow us","قيّمنا على Google":"Rate us on Google","تم نسخ الطلب":"Order copied","نعم، ألغِ الطلب":"Yes, cancel order","رجوع":"Back"};
+function t(a){return L=="en"&&TR[a]!==undefined?TR[a]:a}
+function tx(h){Object.keys(TR).sort(function(a,b){return b.length-a.length}).forEach(function(k){h=h.split(k).join(TR[k])});return h}
+function cur(){return t("د.أ")}
+function nm(x){return L=="en"?x.e:x.a}
+function sb(x){return L=="en"?x.a:x.e}
+function cn(c,k){return (L=="en")==(k==0)?c[2]:c[0]}
+function tg(){L=L=="ar"?"en":"ar";ap()}
+function ap(){var e=L=="en",d=document.documentElement;d.lang=L;d.dir=e?"ltr":"rtl";document.body.classList.toggle("en",e);
+$("lg").textContent=e?"عربي":"EN";$("hp").textContent=t("قهوة · حلويات · أراجيل");$("rt").textContent=t("اقتراح اليوم");
+$("pm").innerHTML="<b>"+t("عرض")+"</b>"+t("اطلب 2 وافل أو كريب واحصل على واحد مجاناً");$("q").placeholder=t("ابحث عن مشروبك أو حلاك");
+$("ft1").textContent=t("الأسعار بالدينار الأردني");$("fl").textContent=t("تابعنا")+" @mountainhutcafe";$("rv").textContent="★ "+t("قيّمنا على Google");
+hide();render();upd()}
+function fm(p){return p.toFixed(2)}
+function render(){
+  var q=$("q").value.trim().toLowerCase(),h="",tb="";
+  C.forEach(function(c,ci){
+    var it="";
+    c.it.forEach(function(x,ii){
+      var id=ci+"-"+ii;
+      if(q&&(x.a+x.e).toLowerCase().indexOf(q)<0)return;
+      if(onlyFav&&!fav[id])return;
+      var so=x.f=="s";
+      it+='<div class="it'+(so?" so":"")+'"><div class="in"><div class="a">'+nm(x)+'</div><div class="e">'+sb(x)+'</div>'+(x.f?'<div class="bd '+x.f+'">'+t(BD[x.f])+'</div>':"")+'</div><div class="r"><span><b>'+fm(x.p)+'</b><small>'+cur()+'</small></span><div><button class="hb'+(fav[id]?" on":"")+'" aria-label="مفضلة" onclick="tf(\''+id+'\')">'+HS+'</button><button class="ad" aria-label="إضافة" '+(so?"disabled":"")+' onclick="ad('+ci+','+ii+')">+</button></div></div></div>';
+    });
+    if(it)h+='<section id="c'+ci+'"><div class="sh"><span class="ix">'+("0"+(ci+1)).slice(-2)+'</span><h2>'+cn(c,0)+'</h2><i>'+cn(c,1)+'</i></div>'+(c[4]?'<p class="sn">'+t(c[4])+'</p>':"")+it+'</section>';
+    tb+='<button data-i="'+ci+'" onclick="location.hash=\'c'+ci+'\'">'+cn(c,0)+'</button>';
+  });
+  $("m").innerHTML=h||'<p class="ft">'+t("ما لقينا نتائج")+'</p>';
+  $("tabs").innerHTML=tb;
+}
+function tf(id){if(fav[id])delete fav[id];else fav[id]=1;try{localStorage.setItem("mhfav",JSON.stringify(fav))}catch(e){}render()}
+$("fv").onclick=function(){onlyFav=!onlyFav;this.className=onlyFav?"on":"";render()};
+function show(h){$("sc").innerHTML=L=="en"?tx(h):h;$("sh").style.display="flex"}
+function hide(){$("sh").style.display="none"}
+$("sh").onclick=function(e){if(e.target==this)hide()};
+function ad(c,i){
+  if(c<2){pend={c:c,i:i,s:2};opt()}else push(c,i,"","")
+}
+function opt(){
+  var x=C[pend.c].it[pend.i],h='<h3>'+nm(x)+'</h3><div class="e" style="text-align:'+(L=="en"?"left":"right")+'">'+sb(x)+'</div><div class="ch">';
+  SG.forEach(function(s,k){h+='<button class="'+(k==pend.s?"on":"")+'" onclick="pend.s='+k+';opt()">'+t(s)+'</button>'});
+  show(h+'</div><input id="nt" placeholder="ملاحظة (مثلاً: حليب خالي الدسم)"><button class="pb" onclick="push(pend.c,pend.i,SG[pend.s],$(\'nt\').value);hide()">أضف للطلب</button><button class="sb" onclick="hide()">إلغاء</button>');
+}
+function push(c,i,s,n){
+  var l=cart.filter(function(x){return x.c==c&&x.i==i&&x.s==s&&x.n==n})[0];
+  if(l)l.q++;else cart.push({c:c,i:i,s:s,n:n,q:1});upd();
+}
+function tot(){var n=0,s=0;cart.forEach(function(l){n+=l.q;s+=l.q*C[l.c].it[l.i].p});return[n,s]}
+function upd(){var r=tot();$("cb").style.display=r[0]?"flex":"none";$("cn").textContent=t("طلبي")+" ("+r[0]+")";$("ct").textContent=fm(r[1])+" "+cur()}
+function chg(k,d){cart[k].q+=d;if(cart[k].q<=0)cart.splice(k,1);upd();cart.length?ord():hide()}
+function ord(){
+  var h='<h3>طلبي</h3>';
+  cart.forEach(function(l,k){var x=C[l.c].it[l.i];h+='<div class="row"><div>'+nm(x)+'<small>'+[l.s,l.n].filter(Boolean).join(" · ")+'</small></div><button onclick="chg('+k+',-1)">−</button><b>'+l.q+'</b><button onclick="chg('+k+',1)">+</button><button class="rm" onclick="chg('+k+',-'+l.q+')">حذف</button></div>'});
+  show(h+'<input id="tb" inputmode="numeric" placeholder="رقم الطاولة" value="'+tbl+'" oninput="tbl=this.value"><div class="tot"><span>الإجمالي</span><span>'+fm(tot()[1])+' د.أ</span></div><button class="pb" onclick="cp()">نسخ الطلب لإعطائه للويتر</button><button class="sb" onclick="hide()">إغلاق</button><button class="sb cx" onclick="cc()">إلغاء الطلب</button>');
+}
+function cc(){show('<h3>متأكد بدك تلغي الطلب كامل؟</h3><button class="sb cx" onclick="cc2()">نعم، ألغِ الطلب</button><button class="sb" onclick="ord()">رجوع</button>')}
+function cc2(){cart=[];tbl="";upd();hide()}
+function cp(){
+  var tt=(tbl?"طاولة "+tbl+"\n":"")+cart.map(function(l){var x=C[l.c].it[l.i];return l.q+"× "+x.a+([l.s,l.n].filter(Boolean).length?" ("+[l.s,l.n].filter(Boolean).join("، ")+")":"")}).join("\n")+"\nالمجموع: "+fm(tot()[1])+" د.أ";
+  try{navigator.clipboard.writeText(tt);alert(t("تم نسخ الطلب"))}catch(e){alert(tt)}
+}
+$("cb").onclick=ord;
+function rnd(){
+  var a=[];C.forEach(function(c,ci){if(ci<7||ci==8)c.it.forEach(function(x,ii){if(x.f!="s")a.push([ci,ii])})});
+  var p=a[Math.floor(Math.random()*a.length)],x=C[p[0]].it[p[1]];
+  show('<h3>اقتراحنا لك</h3><div style="text-align:center;padding:14px 0"><div class="a" style="font-size:20px">'+nm(x)+'</div><div class="e" style="text-align:center">'+sb(x)+'</div><div class="r"><b style="font-size:24px">'+fm(x.p)+'</b> <small>د.أ</small></div></div><button class="pb" onclick="hide();ad('+p[0]+','+p[1]+')">أضفه لطلبي</button><button class="sb" onclick="rnd()">اقتراح ثاني</button>');
+}
+$("q").oninput=render;
+window.addEventListener("scroll",function(){var a=-1;C.forEach(function(c,i){var e=$("c"+i);if(e&&e.getBoundingClientRect().top<170)a=i});document.querySelectorAll(".tabs button").forEach(function(b){b.classList.toggle("on",+b.dataset.i==a)})});
+render();
+</script>
+</body>
+</html>
